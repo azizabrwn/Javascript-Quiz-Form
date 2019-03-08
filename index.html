@@ -4,143 +4,183 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="quiz.css">
 
-<title>Nursery Rhyme Quiz</title>
+<title> Final Quiz</title>
 </head>
 <body>
-    <h1>Nursery Rhyme Quiz!</h1>
-    <form id="quiz" name="quiz">
-            <p>Jack and Jill went...</p>
-            <input id="radioButton" type="radio" name="question1" value="Up the hill">Up the hill <br> 
-            <input id="radioButton" type="radio" name="question1" value="To the market">To the market <br>
-            <input id="radioButton" type="radio" name="question1" value = "To the sea">To the sea <br>
-            <input id="radioButton" type="radio" name="question1" value = "To the woods">To the woods <br> <br>
+    <div class="header">
+        <h1>Nursery Rhyme Quiz!</h1>
+    </div>
+        
+    <div class="body">
+        <form name="quiz" onsubmit="return onSubmit()">
+        <div class="question">
+                <p>Jack and Jill went...</p>
+                <input  type="radio" name="q1" value= "a"> a.Up the hill <br> 
+                <input  type="radio" name="q1" value="b">b.To the market <br>
+                <input  type="radio" name="q1" value ="c">c.To the sea <br>
+                <input  type="radio" name="q1" value ="d">d.To the woods <br> <br>
+        </div> <hr>
+        <div class= "question">
+                <p>This little piggy went to the market, this little piggy...</p>
+                <input  type="radio" name="q2" value="a">a.Stayed at home<br>
+                <input  type="radio" name="q2" value = "b">b.Had roast beef<br>
+                <input  type="radio" name="q2" value = "c">c.Built a hut <br>
+                <input  type="radio" name="q2" value = "d">d.Fell in love<br> <br>
+            </div> <hr>
+            <div class = "question">       
+                <p>Who did the black sheep not give any wool to?</p>
+                <input  type="radio" name="q3" value = "a">a.The Master<br>
+                <input  type="radio" name="q3" value = "b">b.The Dame <br>
+                <input  type="radio" name="q3" value ="c">c.The King<br>
+                <input  type="radio" name="q3" value ="d">d.The little boy who lived down the lane<br> <br>
+            </div><hr>
+            <div class="question">
+                    <p>How did the Big Bad Wolf try to demolish the homes of three little pigs?</p>
+                    <input  type="radio" name="q4" value = "a"> a.A bulldozer<br>
+                    <input  type="radio" name="q4" value = "b">b.Taking it apart brick by brick<br>
+                    <input  type="radio" name="q4" value = "c">c.He huffed and puffed<br>
+                    <input  type="radio" name="q4" value = "d">d.He was welcomed in<br> <br>
+            </div><hr>
+            <div class="question">
+                    <p>Did the Eensy Weensy spider...</p>
+                    <input  type="radio" name="q5" value ="a">a. Climb up the wall<br>
+                    <input  type="radio" name="q5" value ="b">b.Scare a little girl<br>
+                    <input  type="radio" name="q5" value = "c">c.Catch a fly<br>
+                    <input  type="radio" name="q5" value ="d">d.Climb up the water spout<br> <br>
+            </div><hr>
+            <div>
+                    <p>What did the three little kittens lose?</p>
+                    <input  type="radio" name="q6" value ="a">a.Their mittens<br>
+                    <input  type="radio" name="q6" value ="b">b.Their shoes<br>
+                    <input  type="radio" name="q6" value ="c">c.Their lust for life<br>
+                    <input  type="radio" name="q6" value ="d">d.Their hats<br><br>
+            </div><hr>
+            <div>
+                    <p>Who stole the Queen of Hearts' tarts?</p>
+                    <input  type="radio" name="q7" value ="a">a.The Knave of Hearts<br>
+                    <input  type="radio" name="q7" value =" b">b.The Prince of Mince<br>
+                    <input  type="radio" name="q7" value ="c">c.The King of Wings<br>
+                    <input  type="radio" name="q7" value ="d"> d.Jack<br><br>
+
+            </div><hr>
+            <div>
+                    <p>Twinkle, twinkle, little...</p>
+                    <input  type="radio" name="q8" value = "a">a.Diamond<br>
+                    <input  type="radio" name="q8" value = " b">b.Star<br>
+                    <input  type="radio" name="q8" value = "c"> c.square<br>
+                    <input  type="radio" name="q8" value = "d">d.Triangle<br><br>        
+
+            </div><hr>
+            <div>
+                    <p>Ringa ringa rosy, a pocket full of...</p>
+                    <input  type="radio" name="q9" value = "a">a. Posy<br>
+                    <input  type="radio" name="q9" value = "b">b. Dandelions<br>
+                    <input  type="radio" name="q9" value = "c">c. Sleepdust<br>
+                    <input  type="radio" name="q9" value = "d">d. Sauce<br> <br>
+            </div><hr>
+            <div>
+                    <p>Goldilocks and the three...</p>
+                    <input  type="radio" name="q10" value ="a"> a:Geese<br>
+                    <input  type="radio" name="q10" value ="b">b:Kittens<br>
+                    <input  type="radio" name="q10" value = "c" >c:Bears<br>
+                    <input  type="radio" name="q10" value = " d"> d:Koalas<br> <br>
+            </div><hr>
+            <div class="question">
+                    <p>Jack and Jill went...</p>
+                    <input  type="radio" name="q11" value= "a"> a.Up the hill <br> 
+                    <input  type="radio" name="q11" value="b">b.To the market <br>
+                    <input  type="radio" name="q11" value ="c">c.To the sea <br>
+                    <input  type="radio" name="q11" value ="d">d.To the woods <br> <br>
+            </div><hr>
+            <div class= "question">
+                    <p>This little piggy went to the market, this little piggy...</p>
+                    <input  type="radio" name="q12" value="a">a.Stayed at home<br>
+                    <input  type="radio" name="q12" value = "b">b.Had roast beef<br>
+                    <input  type="radio" name="q12" value = "c">c.Built a hut <br>
+                    <input  type="radio" name="q12" value = "d">d.Fell in love<br> <br>
+                </div><hr>
+                <div class = "question">       
+                    <p>Who did the black sheep not give any wool to?</p>
+                    <input  type="radio" name="q13" value = "a">a.The Master<br>
+                    <input  type="radio" name="q13" value = "b">b.The Dame <br>
+                    <input  type="radio" name="q13" value ="c">c.The King<br>
+                    <input  type="radio" name="q13" value ="d">d.The little boy who lived down the lane<br> <br>
+                </div><hr>
+                <div class="question">
+                        <p>How did the Big Bad Wolf try to demolish the homes of three little pigs?</p>
+                        <input  type="radio" name="q14" value = "a"> a:A bulldozer<br>
+                        <input  type="radio" name="q14" value = "b">b:Taking it apart brick by brick<br>
+                        <input  type="radio" name="q14" value = "c">c:He huffed and puffed<br>
+                        <input  type="radio" name="q14" value = "d">d:He was welcomed in<br> <br>
+                </div><hr>
+                <div class="question">
+                        <p>Did the Eensy Weensy spider...</p>
+                        <input  type="radio" name="q15" value ="a">a: Climb up the wall<br>
+                        <input  type="radio" name="q15" value ="b">b:Scare a little girl<br>
+                        <input  type="radio" name="q15" value = "c">c:Catch a fly<br>
+                        <input  type="radio" name="q15" value ="d">d:Climb up the water spout<br> <br>
+                </div><hr>
+                <div class="question">
+                        <p>What did the three little kittens lose?</p>
+                        <input  type="radio" name="q16" value ="a">a:Their mittens<br>
+                        <input  type="radio" name="q16" value ="b">b:Their shoes<br>
+                        <input  type="radio" name="q16" value ="c">c:Their lust for life<br>
+                        <input  type="radio" name="q16" value ="d">d:Their hats<br><br>
+                </div><hr>
+                <div class="question">
+                        <p>Who stole the Queen of Hearts' tarts?</p>
+                        <input  type="radio" name="q17" value ="a">a.The Knave of Hearts<br>
+                        <input  type="radio" name="q17" value =" b">b.The Prince of Mince<br>
+                        <input  type="radio" name="q17" value ="c">c.The King of Wings<br>
+                        <input  type="radio" name="q17" value ="d"> d.Jack<br><br>
     
-            <p>This little piggy went to the market, this little piggy...</p>
-            <input id="radioButton" type="radio" name="question2" value="Stayed at home">Stayed at home<br>
-            <input id="radioButton" type="radio" name="question2" value = "Had roast beef">Had roast beef<br>
-            <input id="radioButton" type="radio" name="question2" value = "Built a hut">Built a hut <br>
-            <input id="radioButton" type="radio" name="question2" value = "Fell in love">Fell in love<br> <br>
+                </div><hr>
+                <div class="question">
+                        <p>Twinkle, twinkle, little...</p>
+                        <input  type="radio" name="q18" value = "a">a.Diamond<br>
+                        <input  type="radio" name="q18" value = " b">b.Star<br>
+                        <input  type="radio" name="q18" value = "c">c.square<br>
+                        <input  type="radio" name="q18" value = "d">d.Triangle<br><br>        
     
-            <p>Who did the black sheep not give any wool to?</p>
-            <input id="radioButton" type="radio" name="question3" value = "The Master">The Master<br>
-            <input id="radioButton" type="radio" name="question3" value = "The Dame">The Dame <br>
-            <input id="radioButton" type="radio" name="question3" value ="The King">The King<br>
-            <input id="radioButton" type="radio" name="question3" value ="Fell in love">The little boy who lived down the lane<br> <br>
+                </div><hr>
+                <div class="question">
+                        <p>Ringa ringa rosy, a pocket full of...</p>
+                        <input  type="radio" name="q19" value = "a">a. Posy<br>
+                        <input  type="radio" name="q19" value = "b">b. Dandelions<br>
+                        <input  type="radio" name="q19" value = "c">c. Sleepdust<br>
+                        <input  type="radio" name="q19" value = "d">d. Sauce<br> <br>
+                </div><hr>
+                <div class="question">
+                        <p>Goldilocks and the three...</p>
+                        <input  type="radio" name="q20" value ="a"> a.Geese<br>
+                        <input  type="radio" name="q20" value ="b">b.Kittens<br>
+                        <input  type="radio" name="q20" value = "c" >c.Bears<br>
+                        <input  type="radio" name="q20" value = " d"> d.Koalas<br> <br>
+                </div><hr>
+            </div>
+                
             
-            <p>How did the Big Bad Wolf try to demolish the homes of three little pigs?</p>
-            <input id="radioButton" type="radio" name="question4" value = " A bulldozer"> A bulldozer<br>
-            <input id="radioButton" type="radio" name="question4" value = "Taking it apart brick by brick">Taking it apart brick by brick<br>
-            <input id="radioButton" type="radio" name="question4" value = "He huffed and puffed">He huffed and puffed<br>
-            <input id="radioButton" type="radio" name="question4" value = "He was welcomed in">He was welcomed in<br> <br>
+            <button type="submit">Submit Test</button> 
+            <div id= "results">
+                    <h2>You scored: Not yet attempted</h2>
+                </div>
+        </form> 
+        </div>
+    </div>
 
-            <p>Did the Eensy Weensy spider...</p>
-            <input id="radioButton" type="radio" name="question5" value ="Climb up the wall">Climb up the wall<br>
-            <input id="radioButton" type="radio" name="question5" value ="Scare a little girl">Scare a little girl<br>
-            <input id="radioButton" type="radio" name="question5" value = "Catch a fly">Catch a fly<br>
-            <input id="radioButton" type="radio" name="question5" value ="Climb up the water spout">Climb up the water spout<br> <br>
+   
 
-            <p>What did the three little kittens lose?</p>
-            <input id="radioButton" type="radio" name="question6" value ="Their mittens">Their mittens<br>
-            <input id="radioButton" type="radio" name="question6" value ="Their shoes">Their shoes<br>
-            <input id="radioButton" type="radio" name="question6" value ="Their lust for life">Their lust for life<br>
-            <input id="radioButton" type="radio" name="question6" value ="Their hats">Their hats<br><br>
 
-            <p>Who stole the Queen of Hearts' tarts?</p>
-            <input id="radioButton" type="radio" name="question7" value ="The Knave of Hearts">The Knave of Hearts<br>
-            <input id="radioButton" type="radio" name="question7" value ="The Prince of Mince">The Prince of Mince<br>
-            <input id="radioButton" type="radio" name="question7" value ="The King of Wings">The King of Wings<br>
-            <input id="radioButton" type="radio" name="question7" value ="Jack"> Jack<br><br>
 
-            <p>Twinkle, twinkle, little...</p>
-            <input id="radioButton" type="radio" name="question8" value = "Diamond">Diamond<br>
-            <input id="radioButton" type="radio" name="question8" value = " Star">  Star<br>
-            <input id="radioButton" type="radio" name="question8" value = "square"> square<br>
-            <input id="radioButton" type="radio" name="question8" value = "Triangle"> Triangle<br><br>
 
-            <p>Ringa ringa rosy, a pocket full of...</p>
-            <input id="radioButton" type="radio" name="question9" value ="posy">Posy<br>
-            <input id="radioButton" type="radio" name="question9" value = "dandelions">Dandelions<br>
-            <input id="radioButton" type="radio" name="question9" value = "Sleepdust"> Sleepdust<br>
-            <input id="radioButton" type="radio" name="question9" value = "Sauce"> Sauce<br> <br>
 
-            <p>Goldilocks and the three...</p>
-            <input id="radioButton" type="radio" name="question10" value ="Geese">Geese<br>
-            <input id="radioButton" type="radio" name="question10" value ="Kittens">Kittens<br>
-            <input id="radioButton" type="radio" name="question10" value = "Bears" >Bears<br>
-            <input id="radioButton" type="radio" name="question10" value = " Koalas"> Koalas<br> <br>
 
-            <p>Jack and Jill went...</p>
-            <input id="radioButton" type="radio" name="question11" value="Up the hill">Up the hill <br> 
-            <input id="radioButton" type="radio" name="question11" value="To the market">To the market <br>
-            <input id="radioButton" type="radio" name="question11" value = "To the sea">To the sea <br>
-            <input id="radioButton" type="radio" name="question11" value = "To the woods">To the woods <br> <br>
-
-            <p>This little piggy went to the market, this little piggy...</p>
-            <input id="radioButton" type="radio" name="question12" value="Stayed at home">Stayed at home<br>
-            <input id="radioButton" type="radio" name="question12" value = "Had roast beef">Had roast beef<br>
-            <input id="radioButton" type="radio" name="question12" value = "Built a hut">Built a hut <br>
-            <input id="radioButton" type="radio" name="question12" value = "Fell in love">Fell in love<br> <br>
-
-            <p>Who did the black sheep not give any wool to?</p>
-            <input id="radioButton" type="radio" name="question13" value = "The Master">The Master<br>
-            <input id="radioButton" type="radio" name="question13" value = "The Dame">The Dame <br>
-            <input id="radioButton" type="radio" name="question13" value ="The King">The King<br>
-            <input id="radioButton" type="radio" name="question13" value ="Fell in love">The little boy who lived down the lane<br> <br> 
-
-            <p>How did the Big Bad Wolf try to demolish the homes of three little pigs?</p>
-            <input id="radioButton" type="radio" name="question14" value = " A bulldozer"> A bulldozer<br>
-            <input id="radioButton" type="radio" name="question14" value = "Taking it apart brick by brick">Taking it apart brick by brick<br>
-            <input id="radioButton" type="radio" name="question14" value = "He huffed and puffed">He huffed and puffed<br>
-            <input id="radioButton" type="radio" name="question14" value = "He was welcomed in">He was welcomed in<br> <br>
-
-            <p>Did the Eensy Weensy spider...</p>
-            <input id="radioButton" type="radio" name="question15" value ="Climb up the wall">Climb up the wall<br>
-            <input id="radioButton" type="radio" name="question15" value ="Scare a little girl">Scare a little girl<br>
-            <input id="radioButton" type="radio" name="question15" value = "Catch a fly">Catch a fly<br>
-            <input id="radioButton" type="radio" name="question15" value ="Climb up the water spout">Climb up the water spout<br> <br>
-
-            <p>What did the three little kittens lose?</p>
-            <input id="radioButton" type="radio" name="question16" value ="Their mittens">Their mittens<br>
-            <input id="radioButton" type="radio" name="question16" value ="Their shoes">Their shoes<br>
-            <input id="radioButton" type="radio" name="question16" value ="Their lust for life">Their lust for life<br>
-            <input id="radioButton" type="radio" name="question16" value ="Their hats">Their hats<br><br>
-
-            <p>Who stole the Queen of Hearts' tarts?</p>
-            <input id="radioButton" type="radio" name="question17" value ="The Knave of Hearts">The Knave of Hearts<br>
-            <input id="radioButton" type="radio" name="question17" value ="The Prince of Mince">The Prince of Mince<br>
-            <input id="radioButton" type="radio" name="question17" value ="The King of Wings">The King of Wings<br>
-            <input id="radioButton" type="radio" name="question17" value ="Jack"> Jack<br><br>
-
-            <p>Twinkle, twinkle, little...</p>
-            <input id="radioButton" type="radio" name="question18" value = "Diamond">Diamond<br>
-            <input id="radioButton" type="radio" name="question18" value = " Star">  Star<br>
-            <input id="radioButton" type="radio" name="question18" value = "square"> square<br>
-            <input id="radioButton" type="radio" name="question18" value = "Triangle"> Triangle<br><br>
-
-            <p>Ringa ringa rosy, a pocket full of...</p>
-            <input id="radioButton" type="radio" name="question19" value ="posy">Posy<br>
-            <input id="radioButton" type="radio" name="question19" value = "dandelions">Dandelions<br>
-            <input id="radioButton" type="radio" name="question19" value = "Sleepdust"> Sleepdust<br>
-            <input id="radioButton" type="radio" name="question19" value = "Sauce"> Sauce<br> <br>
-
-            <p>Goldilocks and the three...</p>
-            <input id="radioButton" type="radio" name="question20" value ="Geese">Geese<br>
-            <input id="radioButton" type="radio" name="question20" value ="Kittens">Kittens<br>
-            <input id="radioButton" type="radio" name="question20" value = "Bears" >Bears<br>
-            <input id="radioButton" type="radio" name="question20" value = " Koalas"> Koalas<br><br>    
-    
-            
-            
-    </form>
-    <input id = "button" type = "button" value= "complete" onclick = "check();"> 
-
-    <script src="quiz2.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script src="quiz.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
